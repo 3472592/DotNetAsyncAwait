@@ -1,0 +1,34 @@
+﻿<Window x:Class="AsyncAwaitWPFPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncAwaitWPFPractice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <StackPanel>
+                <CheckBox 
+                    x:Name="useAwaitAsync"
+                    IsChecked="True"
+                    Content="Use await/async"
+                    Margin="5"
+                />
+                
+                <Button x:Name="countButton"
+                        Content="Start counting"
+                        HorizontalAlignment="Left"
+                        Click="CountButton_Click"
+                        Margin="5"
+                />
+                
+                <TextBlock 
+                    x:Name="progress"
+                    HorizontalAlignment="Left"
+                    Margin="5" 
+                />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
